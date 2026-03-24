@@ -1,0 +1,10 @@
+events:
+  8b92a746-121a-47dc-9254-869d867a89e3:
+    adapter_name: generic
+    id: 8b92a746-121a-47dc-9254-869d867a89e3
+    name: AutoElevate Requests from HaloPSA
+    source_type: webhook
+    subscriptions:
+    - agent_id: ac6aa147-d6ee-46dd-a3fd-653dbedfc780
+      id: <your-subscription-id>
+      target_type: agent

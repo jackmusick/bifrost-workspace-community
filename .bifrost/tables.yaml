@@ -1,0 +1,37 @@
+tables:
+  1b5de84e-96f6-4de3-8e12-8c72e72e6307:
+    id: 1b5de84e-96f6-4de3-8e12-8c72e72e6307
+    name: automation_ticket_matches
+  1dadaf02-f056-4801-ad97-b218e0f03c01:
+    description: PowerShell script execution jobs for NinjaRMM fetch-and-execute pattern
+    id: 1dadaf02-f056-4801-ad97-b218e0f03c01
+    name: script_jobs
+    schema:
+      columns:
+      - name: script_content
+        type: text
+      - name: device_id
+        type: number
+      - name: status
+        type: text
+      - name: result
+        type: text
+      - name: error
+        type: text
+      - name: created_at
+        type: text
+  248bbd56-63dd-4f6c-a282-e2f73c13c3b9:
+    id: 248bbd56-63dd-4f6c-a282-e2f73c13c3b9
+    name: gdap_template
+  7792bf19-b7fd-4b12-b3cb-e24106961911:
+    id: 7792bf19-b7fd-4b12-b3cb-e24106961911
+    name: csp_tenant_status
+  79b79974-903d-4d79-ab7f-6796e8ec34d4:
+    id: 79b79974-903d-4d79-ab7f-6796e8ec34d4
+    name: gdap_template
+  9dcb03ed-6e5d-49b7-a792-c56b93b7785f:
+    id: 9dcb03ed-6e5d-49b7-a792-c56b93b7785f
+    name: microsoft_selected_permissions
+  a81a23ec-3362-48cc-8829-5c743ae9690b:
+    id: a81a23ec-3362-48cc-8829-5c743ae9690b
+    name: automation_ticket_matches

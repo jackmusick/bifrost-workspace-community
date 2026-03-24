@@ -1,0 +1,46 @@
+configs:
+  # AutoElevate approval policy text — paste your organization's approval policy here.
+  # The Elevation Agent reads this to make approve/deny decisions.
+  autoelevate_approval_policy:
+    id: autoelevate_approval_policy
+    key: autoelevate_approval_policy
+    type: string
+    value: ""
+
+  # AutoElevate email template IDs for HaloPSA notifications
+  autoelevate_approval_email_template_id:
+    id: autoelevate_approval_email_template_id
+    key: autoelevate_approval_email_template_id
+    type: int
+    value: "-148"
+
+  autoelevate_denial_email_template_id:
+    id: autoelevate_denial_email_template_id
+    key: autoelevate_denial_email_template_id
+    type: int
+    value: "-145"
+
+  # NinjaOne script execution config (used by modules/extensions/ninjaone.py)
+  ninja_post_result_webhook_url:
+    id: ninja_post_result_webhook_url
+    key: ninja_post_result_webhook_url
+    type: string
+    value: "<your-bifrost-webhook-url>"
+
+  ninja_get_script_endpoint:
+    id: ninja_get_script_endpoint
+    key: ninja_get_script_endpoint
+    type: string
+    value: "<your-bifrost-endpoint-url>"
+
+  ninja_script_id:
+    id: ninja_script_id
+    key: ninja_script_id
+    type: int
+    value: "<your-script-id>"
+
+  ninja_bifrost_api_key:
+    id: ninja_bifrost_api_key
+    key: ninja_bifrost_api_key
+    type: secret
+    value: "<your-value>"

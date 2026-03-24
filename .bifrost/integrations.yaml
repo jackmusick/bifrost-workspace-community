@@ -1,0 +1,160 @@
+integrations:
+  001aee0d-8255-4fc0-9c40-2aa06793c788:
+    config_schema:
+    - key: cove_username
+      required: true
+      type: string
+    - key: cove_password
+      position: 1
+      required: true
+      type: secret
+    id: 001aee0d-8255-4fc0-9c40-2aa06793c788
+    list_entities_data_provider_id: f933cd0f-3b9f-4dcc-9d2d-40defedfe11d
+    mappings: []
+    name: Cove Data Protection
+  0cff621a-be4e-4eb0-a283-93e88f2a3b02:
+    config_schema:
+    - key: api_key
+      required: true
+      type: string
+    - key: api_secret
+      position: 1
+      required: true
+      type: secret
+    id: 0cff621a-be4e-4eb0-a283-93e88f2a3b02
+    list_entities_data_provider_id: 963f28d2-0748-4c4c-b480-35d3f401806d
+    mappings: []
+    name: Huntress
+  1758a335-1aec-43c4-913f-170ce49eec28:
+    config_schema:
+    - description: Base URL for the API (e.g., https://api.example.com)
+      key: base_url
+      required: true
+      type: string
+    id: 1758a335-1aec-43c4-913f-170ce49eec28
+    list_entities_data_provider_id: b81c9262-cb07-439f-9568-0b4e588be7e9
+    mappings: []
+    name: ImmyBot
+    oauth_provider:
+      client_id: <your-client-id>
+      display_name: ImmyBot
+      oauth_flow_type: client_credentials
+      provider_name: ImmyBot
+      scopes:
+      - https://<your-instance>.immy.bot/.default
+      token_url: https://login.microsoftonline.com/<your-tenant-id>/oauth2/v2.0/token
+  29fa0a03-e987-408d-bccb-60693a153d09:
+    config_schema:
+    - key: default_sender_address
+      required: true
+      type: string
+    - key: api_key
+      position: 1
+      required: true
+      type: secret
+    id: 29fa0a03-e987-408d-bccb-60693a153d09
+    mappings: []
+    name: SendGrid
+  342cff77-ef6b-4f46-a6f8-2545b2c6bab1:
+    default_entity_id: <your-tenant-id>
+    id: 342cff77-ef6b-4f46-a6f8-2545b2c6bab1
+    list_entities_data_provider_id: cd0b2104-9e2b-5e59-a794-25a5d8d58ae4
+    mappings: []
+    name: Microsoft CSP
+    oauth_provider:
+      authorization_url: https://login.microsoftonline.com/<your-tenant-id>/oauth2/v2.0/authorize
+      client_id: <your-client-id>
+      display_name: Microsoft CSP
+      provider_name: Microsoft CSP
+      scopes:
+      - Application.Read.All
+      - AppRoleAssignment.ReadWrite.All
+      - DelegatedAdminRelationship.ReadWrite.All
+      - ManagedTenants.Read.All
+      - offline_access
+      token_url: https://login.microsoftonline.com/<your-tenant-id>/oauth2/v2.0/token
+  697517bc-5155-4b9f-bed3-7aeb3d2dc29c:
+    config_schema:
+    - key: base_url
+      required: true
+      type: string
+    id: 697517bc-5155-4b9f-bed3-7aeb3d2dc29c
+    list_entities_data_provider_id: 0ef450da-34c4-4825-b03b-eac970498759
+    mappings: []
+    name: NinjaOne
+    oauth_provider:
+      authorization_url: https://app.ninjarmm.com/ws/oauth/authorize
+      client_id: <your-client-id>
+      display_name: NinjaOne
+      provider_name: NinjaOne
+      scopes:
+      - offline_access monitoring control management
+      token_url: https://app.ninjarmm.com/ws/oauth/token
+  7936770f-eb46-4f91-92a7-3e37ed307715:
+    config_schema:
+    - key: username
+      required: true
+      type: string
+    - key: password
+      position: 1
+      required: true
+      type: secret
+    - key: totp_secret
+      position: 2
+      required: true
+      type: secret
+    id: 7936770f-eb46-4f91-92a7-3e37ed307715
+    mappings: []
+    name: AutoElevate
+  c84e7062-f89b-4178-87c5-f0e55693841a:
+    id: c84e7062-f89b-4178-87c5-f0e55693841a
+    list_entities_data_provider_id: ca8f8508-dbbb-4ddd-a2fc-b2a1cc78ff1e
+    mappings: []
+    name: Pax8
+    oauth_provider:
+      client_id: <your-client-id>
+      display_name: Pax8
+      oauth_flow_type: client_credentials
+      provider_name: Pax8
+      token_url: https://token-manager.pax8.com/oauth/token
+  d2ecbeb7-af86-4276-bc1d-b466041eac2b:
+    config_schema:
+    - key: base_url
+      required: true
+      type: string
+    id: d2ecbeb7-af86-4276-bc1d-b466041eac2b
+    list_entities_data_provider_id: 3322338c-3b3b-4055-9897-8f600849a4b8
+    mappings: []
+    name: HaloPSA
+    oauth_provider:
+      client_id: <your-client-id>
+      display_name: HaloPSA
+      oauth_flow_type: client_credentials
+      provider_name: HaloPSA
+      scopes:
+      - all
+      token_url: https://<your-instance>.halopsa.com/auth/token
+  dab30741-a455-4c50-bd2d-0ab3e78fe3cd:
+    default_entity_id: <your-tenant-id>
+    id: dab30741-a455-4c50-bd2d-0ab3e78fe3cd
+    list_entities_data_provider_id: cd0b2104-9e2b-5e59-a794-25a5d8d58ae4
+    mappings: []
+    name: Microsoft
+    oauth_provider:
+      authorization_url: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+      client_id: <your-client-id>
+      display_name: Microsoft Graph
+      oauth_flow_type: client_credentials
+      provider_name: Microsoft Graph
+      scopes:
+      - https://graph.microsoft.com/.default
+      token_url: https://login.microsoftonline.com/{entity_id}/oauth2/v2.0/token
+  f44af0ee-cab3-4359-bd73-7f46f760c632:
+    config_schema:
+    - key: api_key
+      required: true
+      type: secret
+    id: f44af0ee-cab3-4359-bd73-7f46f760c632
+    list_entities_data_provider_id: cdee94f4-cc67-4014-9c20-3103657cf2ec
+    mappings: []
+    name: IT Glue
