@@ -158,3 +158,34 @@ integrations:
     list_entities_data_provider_id: cdee94f4-cc67-4014-9c20-3103657cf2ec
     mappings: []
     name: IT Glue
+  a1f3e92c-7b4d-4e18-9c0a-2d5f831e6047:
+    id: a1f3e92c-7b4d-4e18-9c0a-2d5f831e6047
+    name: CIPP
+    list_entities_data_provider_id: f72a1c85-9e3d-4b67-8f02-1a4e936d7c29
+    mappings: []
+    config_schema:
+    - key: base_url
+      type: string
+      required: true
+      position: 0
+      description: CIPP API base URL (e.g. https://cippidlq5.azurewebsites.net)
+    - key: tenant_id
+      type: string
+      required: true
+      position: 1
+      description: Azure AD tenant ID where CIPP is deployed
+    - key: client_id
+      type: string
+      required: true
+      position: 2
+      description: API client application ID
+    - key: client_secret
+      type: secret
+      required: true
+      position: 3
+      description: API client secret
+    - key: api_scope
+      type: string
+      required: true
+      position: 4
+      description: CIPP API OAuth scope (api://{client-id}/.default)

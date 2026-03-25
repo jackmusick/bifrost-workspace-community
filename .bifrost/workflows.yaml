@@ -409,6 +409,17 @@ workflows:
     id: b2b0550b-f214-4dc6-9095-7e82711ff3da
     name: Clear HaloPSA Knowledge
     path: features/halopsa_reporting/workflows/batch_analyze.py
+  b3c91e47-2f8a-4d09-a1e6-7c5d820f3b14:
+    category: CIPP
+    description: Sync CIPP-managed customer tenants to Bifrost organizations.
+    function_name: sync_cipp_tenants
+    id: b3c91e47-2f8a-4d09-a1e6-7c5d820f3b14
+    name: 'CIPP: Sync Tenants'
+    path: features/cipp/workflows/sync_tenants.py
+    tags:
+    - cipp
+    - sync
+    timeout_seconds: 300
   b6317462-15cc-413c-afa7-dc0e8e1f3342:
     category: Microsoft CSP
     description: Get currently selected Microsoft permissions.
@@ -570,6 +581,18 @@ workflows:
     - permissions
     - roles
     - platform
+  f72a1c85-9e3d-4b67-8f02-1a4e936d7c29:
+    category: CIPP
+    description: Returns CIPP-managed tenants for org mapping picker.
+    function_name: list_cipp_tenants
+    id: f72a1c85-9e3d-4b67-8f02-1a4e936d7c29
+    name: 'CIPP: List Tenants'
+    path: features/cipp/workflows/data_providers.py
+    tags:
+    - cipp
+    - data-provider
+    timeout_seconds: 60
+    type: data_provider
   f89ed46b-566d-4b40-991b-768278dcceb7:
     category: Platform
     description: Grant or revoke the HR Admin role for a Bifrost user. Provider access
