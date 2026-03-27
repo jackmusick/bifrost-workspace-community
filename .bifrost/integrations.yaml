@@ -25,6 +25,80 @@ integrations:
     list_entities_data_provider_id: 963f28d2-0748-4c4c-b480-35d3f401806d
     mappings: []
     name: Huntress
+  82252311-d1d6-4d69-b26f-b42989e60d03:
+    config_schema:
+    - description: DNSFilter API token from Account Settings
+      key: api_key
+      position: 0
+      required: true
+      type: secret
+    id: 82252311-d1d6-4d69-b26f-b42989e60d03
+    list_entities_data_provider_id: 41d3fef1-f134-4ca9-a61a-4c9417151647
+    mappings: []
+    name: DNSFilter
+  aebb8d28-9531-4344-84a1-234ca3922941:
+    config_schema:
+    - description: Cisco Meraki Dashboard API key
+      key: api_key
+      position: 0
+      required: true
+      type: secret
+    id: aebb8d28-9531-4344-84a1-234ca3922941
+    list_entities_data_provider_id: 9c752875-4f3e-475e-92be-bc47f54f72fa
+    mappings: []
+    name: Meraki
+  05b0c5ab-e7ff-4f24-ba4e-8693b4d9d5fb:
+    config_schema:
+    - description: VIPRE External API base URI (e.g. https://api.myvipre.com/api/v1)
+      key: base_uri
+      position: 0
+      required: true
+      type: string
+    - description: VIPRE header value for X-Vipre-Endpoint-Key-Id
+      key: key_id
+      position: 1
+      required: true
+      type: string
+    - description: VIPRE header value for X-Vipre-Endpoint-Api-Key
+      key: api_key
+      position: 2
+      required: true
+      type: secret
+    id: 05b0c5ab-e7ff-4f24-ba4e-8693b4d9d5fb
+    list_entities_data_provider_id: fb8da981-cd23-4193-8dbc-694244386e52
+    mappings: []
+    name: VIPRE
+  42e2cb7a-cd29-47b9-a88f-81b2f09227b1:
+    config_schema:
+    - description: ConnectSecure API base URI (e.g. https://api.connectsecure.com)
+      key: base_uri
+      position: 0
+      required: true
+      type: string
+    - description: ConnectSecure pod ID header value
+      key: pod_id
+      position: 1
+      required: true
+      type: string
+    - description: ConnectSecure tenant identifier
+      key: tenant
+      position: 2
+      required: true
+      type: string
+    - description: ConnectSecure API client ID
+      key: api_key
+      position: 3
+      required: true
+      type: string
+    - description: ConnectSecure API client secret
+      key: api_secret
+      position: 4
+      required: true
+      type: secret
+    id: 42e2cb7a-cd29-47b9-a88f-81b2f09227b1
+    list_entities_data_provider_id: f6896db3-bb71-4100-a806-c9daa9f1d802
+    mappings: []
+    name: ConnectSecure
   1758a335-1aec-43c4-913f-170ce49eec28:
     config_schema:
     - description: Base URL for the API (e.g., https://api.example.com)

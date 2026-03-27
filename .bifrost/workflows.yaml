@@ -613,3 +613,115 @@ workflows:
     name: HaloPSA Open Tickets
     path: shared/halopsa/data_providers.py
     type: data_provider
+  1e3af6ff-317b-49f1-a5c9-cc8c42306ed5:
+    access_level: authenticated
+    category: DNSFilter
+    description: Sync DNSFilter customer networks to Bifrost organizations.
+    endpoint_enabled: false
+    function_name: sync_dnsfilter_networks
+    id: 1e3af6ff-317b-49f1-a5c9-cc8c42306ed5
+    name: 'DNSFilter: Sync Networks'
+    path: features/dnsfilter/workflows/sync_networks.py
+    tags:
+    - dnsfilter
+    - sync
+    timeout_seconds: 300
+    type: workflow
+  41d3fef1-f134-4ca9-a61a-4c9417151647:
+    access_level: authenticated
+    category: DNSFilter
+    description: Returns DNSFilter networks for org mapping picker.
+    endpoint_enabled: false
+    function_name: list_dnsfilter_networks
+    id: 41d3fef1-f134-4ca9-a61a-4c9417151647
+    name: 'DNSFilter: List Networks'
+    path: features/dnsfilter/workflows/data_providers.py
+    tags:
+    - dnsfilter
+    - data-provider
+    timeout_seconds: 60
+    type: data_provider
+  9c752875-4f3e-475e-92be-bc47f54f72fa:
+    access_level: authenticated
+    category: Meraki
+    description: Returns Meraki organizations for org mapping picker.
+    endpoint_enabled: false
+    function_name: list_meraki_organizations
+    id: 9c752875-4f3e-475e-92be-bc47f54f72fa
+    name: 'Meraki: List Organizations'
+    path: features/meraki/workflows/data_providers.py
+    tags:
+    - meraki
+    - data-provider
+    timeout_seconds: 60
+    type: data_provider
+  cf6ab76a-f09c-417f-9362-ffcbe31f8649:
+    access_level: authenticated
+    category: Meraki
+    description: Sync Meraki organizations to Bifrost organizations.
+    endpoint_enabled: false
+    function_name: sync_meraki_organizations
+    id: cf6ab76a-f09c-417f-9362-ffcbe31f8649
+    name: 'Meraki: Sync Organizations'
+    path: features/meraki/workflows/sync_organizations.py
+    tags:
+    - meraki
+    - sync
+    timeout_seconds: 300
+    type: workflow
+  09298a60-57fd-4540-890d-13923d0f57a8:
+    access_level: authenticated
+    category: ConnectSecure
+    description: Sync ConnectSecure companies to Bifrost organizations.
+    endpoint_enabled: false
+    function_name: sync_connectsecure_companies
+    id: 09298a60-57fd-4540-890d-13923d0f57a8
+    name: 'ConnectSecure: Sync Companies'
+    path: features/connectsecure/workflows/sync_companies.py
+    tags:
+    - connectsecure
+    - sync
+    timeout_seconds: 300
+    type: workflow
+  0af6ca86-dfea-4693-8906-1a0fb7341dad:
+    access_level: authenticated
+    category: VIPRE
+    description: Sync inferred VIPRE sites to Bifrost organizations.
+    endpoint_enabled: false
+    function_name: sync_vipre_sites
+    id: 0af6ca86-dfea-4693-8906-1a0fb7341dad
+    name: 'VIPRE: Sync Sites'
+    path: features/vipre/workflows/sync_sites.py
+    tags:
+    - vipre
+    - sync
+    timeout_seconds: 300
+    type: workflow
+  f6896db3-bb71-4100-a806-c9daa9f1d802:
+    access_level: authenticated
+    category: ConnectSecure
+    description: Returns ConnectSecure companies for org mapping picker.
+    endpoint_enabled: false
+    function_name: list_connectsecure_companies
+    id: f6896db3-bb71-4100-a806-c9daa9f1d802
+    name: 'ConnectSecure: List Companies'
+    path: features/connectsecure/workflows/data_providers.py
+    tags:
+    - connectsecure
+    - data-provider
+    timeout_seconds: 60
+    type: data_provider
+  fb8da981-cd23-4193-8dbc-694244386e52:
+    access_level: authenticated
+    category: VIPRE
+    description: Returns inferred VIPRE sites for org mapping picker.
+    endpoint_enabled: false
+    function_name: list_vipre_sites
+    id: fb8da981-cd23-4193-8dbc-694244386e52
+    name: 'VIPRE: List Sites'
+    path: features/vipre/workflows/data_providers.py
+    tags:
+    - vipre
+    - data-provider
+    timeout_seconds: 60
+    type: data_provider
